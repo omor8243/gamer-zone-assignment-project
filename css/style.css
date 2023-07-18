@@ -155,7 +155,7 @@ body {
 }
 
 .gamer-title {
-  font-size: 2.50rem;
+  font-size: 2rem;
   font-weight: 700;
   background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
   background-clip: text;
@@ -216,11 +216,20 @@ body {
   .play-heading {
     font-size: 4rem;
   }
+  .gamer-part{
+    flex-direction: column;
+  }
+  .gamer-image img{
+    width: 250px;
+  }
+  .gamer-con{
+    text-align: center;
+  }
 }
 
 /*for medium size*/
 @media screen and (min-width: 576px) and (max-width: 960px) {
-  .nav-part {
+  .nav-part, .gamer-part {
     flex-direction: column;
     text-align: center;
     margin-top: 4rem;
@@ -234,5 +243,8 @@ body {
   .play-image img {
     width: 500px;
     height: 500px;
+  }
+  .gamer-con{
+    text-align: center;
   }
 }
