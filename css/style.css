@@ -13,6 +13,17 @@ body {
   --font-color: #534C64;
 }
 
+.primary-btn {
+  color: #FFF;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 48px;
+  background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+  padding: 0.75rem 1.25rem;
+}
+
 /*nav part css start*/
 .nav-part-container {
   max-width: 100%;
@@ -60,30 +71,110 @@ body {
   border-radius: 8px;
   background: rgba(11, 2, 35, 0.10);
 }
-.navbar .dev-nav .fa-youtube{
- color: #F61C0D;
+
+.navbar .dev-nav .fa-youtube {
+  color: #F61C0D;
 }
 
 /*nav part css end*/
+/*play part css start*/
+.play-part-container {
+  width: 100%;
+}
+
+.play-part {
+  width: 80%;
+  margin: 2rem auto;
+  display: flex;
+  justify-content: space-between;
+}
+.play-title {
+  color: var(--heading-color);
+  font-size: 3rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.play-heading {
+  font-size: 6rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+}
+
+.play-paragraph {
+  color: var(--font-color);
+  font-size: 1.25rem;
+  font-weight: 500;
+  text-transform: lowercase;
+  margin: 5px 0;
+  padding-bottom: 0.70rem;
+
+}
+
+.play-image img {
+  width: 600px;
+  height: 446px; 
+}
+
+.play-btn {
+  color: #FFF;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 48px;
+  background: #4EC5F7;
+  padding: 0.70rem 1.25rem;
+}
+
+/*play part css end*/
 
 /*responsive css*/
 @media screen and (max-width: 576px) {
-  .nav-part{
+  .nav-part {
     flex-direction: column;
     text-align: center;
     margin-top: 4rem;
   }
-  .navbar ul li{
+
+  .navbar ul li {
     display: block;
     padding-bottom: 10px;
   }
+  .play-image img{
+    width: 280px;
+    height: 280px;
+  }
+  .play-part{
+    flex-direction: column-reverse;
+  }
+   .play-title{
+    font-size: 2rem;
+  }
+  .play-heading{
+    font-size: 4rem;
+  } 
 }
 
 /*for medium size*/
 @media screen and (min-width: 576px) and (max-width: 960px) {
-  .nav-part{
+  .nav-part {
     flex-direction: column;
     text-align: center;
     margin-top: 4rem;
+  }
+  .play-part{
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .play-image img{
+    width: 500px;
+    height: 500px;
   }
 }
