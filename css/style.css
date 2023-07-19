@@ -88,7 +88,9 @@ body {
   display: flex;
   justify-content: space-between;
 }
-
+.play-con{
+  background-image: url('../images/Group-14.png');
+}
 .play-title {
   color: var(--heading-color);
   font-size: 3rem;
@@ -187,14 +189,6 @@ body {
 
 /*gamer part css end*/
 /*online game part start*/
-.online-game-part-container {
-  width: 100%;
-}
-
-.online-game-part {
-  width: 80%;
-  margin: 0 auto;
-}
 
 .online-game-con {
   text-align: center;
@@ -222,21 +216,21 @@ body {
   margin: 0;
 }
 
-.online-game-image img {
-  width: 400px;
-}
-
 .online-game-image {
-  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+ /* display: flex; */
 }
-
-.online-image-overlay {
-  height: 100%;
-  width: 100%;
-  background-color: teal;
-  position: absolute;
-  top: 0;
-  left: 0;
+.online-game-image img{
+  width: 280px;
+  height: 320px;
+}
+.image-caption{
+  width: 280px;
+  font-weight: 500;
+  color: var(--font-color);
+  margin: 0;
 }
 
 /*online game part end*/
@@ -255,7 +249,8 @@ body {
   align-items: center;
 
 }
-.play-instant-con{
+
+.play-instant-con {
   width: 300px;
 }
 
@@ -280,27 +275,67 @@ body {
   font-size: 1rem;
   line-height: 1.50rem;
 }
-.play-instant-image .image{
+
+.play-instant-image .image {
   width: 400px;
   height: 450px;
   padding-left: 20px;
 }
 
-.small-image{
+.small-image {
   position: relative;
   bottom: 200px;
   right: 130px;
   /* position: absolute; */
   /* bottom: 10px; */
-  
+
 }
-.small-image img{
+
+.small-image img {
   width: 250px;
   height: 280px;
 }
-  
+
 
 /*play instntly part end*/
+
+/*icon part start*/
+.icon-part-container {
+  max-width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.icon-part {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  /* padding: 0 50px; */
+  width: 80%;
+  margin-bottom: 20px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.icon-part .image {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px;
+  color: var(--heading-color);
+  font-weight: 600;
+}
+
+.icon-part .image:hover {
+  color: #FF42A5;
+  border: 2px solid #FF42A5;
+  border-radius: 50px;
+  transition: .2s;
+}
+
+/*icon part end*/
 
 /*responsive css*/
 @media screen and (max-width: 576px) {
@@ -332,7 +367,8 @@ body {
     font-size: 4rem;
   }
 
-  .gamer-part, .play-instant-part {
+  .gamer-part,
+  .play-instant-part {
     flex-direction: column;
   }
 
@@ -343,19 +379,23 @@ body {
   .gamer-con {
     text-align: center;
   }
-  .play-instant-image .image{
+
+  .play-instant-image .image {
     width: 200px;
     height: 250px;
   }
-  .small-image{
+
+  .small-image {
     bottom: 100px;
     right: 20px;
   }
-  .small-image img{
+
+  .small-image img {
     width: 100px;
     height: 130px;
   }
-  .play-instant-con{
+
+  .play-instant-con {
     width: 250px;
     text-align: center;
   }
@@ -384,10 +424,12 @@ body {
   .gamer-con {
     text-align: center;
   }
-  .play-instant-part{
+
+  .play-instant-part {
     flex-direction: column;
   }
-  .play-instant-con{
+
+  .play-instant-con {
     width: 450px;
   }
 }
