@@ -342,6 +342,7 @@ body {
 /*footer part css start*/
 .footer-part {
   background-color: var(--heading-color);
+  margin-top: 100px;
 }
 
 .footer-logo {
@@ -505,6 +506,32 @@ body {
   .second-content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+  }
+  /*for footer section*/
+  .footer-nav ul{
+    padding-left: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+  }
+  .footer-nav ul li{
+    padding: 10px 5px;
+  }
+  .footer-icon{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-left: 50px;
+  }
+  .footer-sub-nab ul{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+  }
+  .footer-sub-nab ul li{
+    padding: 10px 0;
+  }
+  .footer-copyright p{
+    width: 240px;
   }
 }
 
